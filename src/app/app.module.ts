@@ -9,6 +9,8 @@ import { ButtonComponent } from './button/button.component';
 import { FlagComponent } from './flag/flag.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthComponent } from './auth/auth.component';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { SingUpFormComponent } from './sing-up-form/sing-up-form.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { AuthComponent } from './auth/auth.component';
     ButtonComponent,
     FlagComponent,
     DashboardComponent,
-    AuthComponent
+    AuthComponent,
+    LoginFormComponent,
+    SingUpFormComponent
   ],
   imports: [
     BrowserModule,

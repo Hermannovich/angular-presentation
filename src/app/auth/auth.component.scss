@@ -1,0 +1,30 @@
+@import "../../assets/scss/variables";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/nav";
+
+#auth-page {
+    .nav-tabs {
+        .nav-link {
+            color: theme-color("primary");
+            border: 1px solid theme-color("primary");
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 500;
+            &.active {
+                color: $white;
+                background-color: theme-color("primary");
+            }
+        }
+        .nav-link--login {
+            border-right: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .nav-link--singup {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}

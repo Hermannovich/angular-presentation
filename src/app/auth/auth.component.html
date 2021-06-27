@@ -1,1 +1,24 @@
-<p>auth works!</p>
+<div id="auth-page" class="row justify-content-md-center mx-5 my-5">
+    <div class="col-8 mr-auto">
+        Image here...
+    </div>
+    <div class="col-4">
+        <div class="shadow-sm p-3 mb-5 bg-white rounded">
+            <ul ngbNav #nav="ngbNav" class="nav-tabs align-items-stretch border-0">
+                <li ngbNavItem class="col p-0">
+                    <a ngbNavLink class="nav-link--login">LOGIN</a>
+                    <ng-template ngbNavContent>
+                        <app-login-form></app-login-form>
+                    </ng-template>
+                </li>
+                <li ngbNavItem class="col p-0">
+                    <a ngbNavLink class="nav-link--singup">SIGN UP</a>
+                    <ng-template ngbNavContent>
+                        <app-sing-up-form></app-sing-up-form>
+                    </ng-template>
+                </li>
+            </ul>
+            <div [ngbNavOutlet]="nav"></div>
+        </div>
+    </div>
+</div>
