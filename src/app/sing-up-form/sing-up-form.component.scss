@@ -1,0 +1,12 @@
+@import "../../assets/scss/variables";
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+#signup-form-container {
+    padding: $spacer * 1.25;
+
+    .btn-login {
+        padding: ($spacer * 0.5) ($spacer * 2);
+    }
+}

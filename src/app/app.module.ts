@@ -11,6 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AuthComponent } from './auth/auth.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { SingUpFormComponent } from './sing-up-form/sing-up-form.component';
+import { AuthSvgComponent } from './auth-svg/auth-svg.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { SingUpFormComponent } from './sing-up-form/sing-up-form.component';
     DashboardComponent,
     AuthComponent,
     LoginFormComponent,
-    SingUpFormComponent
+    SingUpFormComponent,
+    AuthSvgComponent
   ],
   imports: [
     BrowserModule,

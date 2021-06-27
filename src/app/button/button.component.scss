@@ -1,16 +1,1 @@
-@import "../../assets/scss/variables";
-@import "node_modules/bootstrap/scss/functions";
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins";
-@import "node_modules/bootstrap/scss/buttons";
 
-.app-btn{
-    @extend .btn;
-    padding: ($spacer * .1) $spacer;
-    border-radius: $baseRadius;
-    font-weight: 500;
-}
-
-.btn-white--primary{
-    @include button-variant($white, $white);
-}
