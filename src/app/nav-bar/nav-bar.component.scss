@@ -1,3 +1,4 @@
+@import "../../assets/scss/variables";
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
@@ -6,5 +7,37 @@
 
 .app-navbar {
     @extend .navbar;
-    padding: .5rem 2rem;
+    padding: .5rem 1rem;
+    background-color: theme-color("primary");   
+}
+
+.navbar-dark {
+    .navbar-nav {
+        .nav-link{
+            color: theme-color("onPrimary");
+            position: relative;
+            padding: 10px 20px;
+
+            &::after{
+                display: inline-block;
+                content: "";
+                position: absolute;
+                background-color: theme-color("onPrimary");
+                width: 1px;
+                height: .75rem;
+                top: 17px;
+                right: -0.5px;
+            }
+        }
+
+        .nav-item{
+            &:last-child{
+                .nav-link{
+                    &::after {
+                        width: 0
+                    }
+                }
+            }
+        }
+    }
 }
