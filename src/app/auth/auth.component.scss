@@ -9,7 +9,7 @@
         .nav-link {
             color: theme-color("primary");
             border: 1px solid theme-color("primary");
-            border-radius: 10px;
+            border-radius: $baseRadius;
             text-align: center;
             font-weight: 500;
             &.active {
